@@ -16,32 +16,10 @@ int main()
     Array *arr = NULL;
     /* Create array here */
     task1(arr);
-<<<<<<< HEAD
     if (arr != NULL) {
         array_delete(arr);
     }
 }
-=======
-    array_delete(arr);
-}
-
-//void printArray(Array *arr, string nameMonth[12], size_t daysMonth[12]) {
-//    size_t m = 0, mD = 0;
-//    cout << "Array: \n";
-//    while(m != 12 && mD != array_size(arr)){
-//        cout << nameMonth[m] << " :\n";
-//        for (size_t i = 0 ; i < daysMonth[m] && mD != array_size(arr); i++)
-//        {
-//            cout << array_get(arr, mD) << " ";
-//            mD++;
-//            if(mD == array_size(arr) || i + 1  == daysMonth[m]) {
-//                cout << "[" << i+1 << "]\n";
-//            }
-//        }
-//        m++;
-//    }
-//}
->>>>>>> bb1991e67 (fix test)
 
 //void printArray(Array *arr, string nameMonth[12], size_t daysMonth[12]) {
 //    size_t m = 0, mD = 0;
@@ -99,18 +77,10 @@ void task1(Array *&arr)  // Использование передачи по с�
     for (size_t i = 0; i < array_size(arr); i++) {
         array_set(arr, i, rand() % MAX_RAINFALL);
     }
-<<<<<<< HEAD
 
     m = rainfallYear(arr, daysMonth, rainfallMonth);
 
     for (size_t i = 0; i < m; i++) {
-=======
-    //printArray(arr, nameMonth, daysMonth);
-    //m = rainfallYear(arr, nameMonth, daysMonth, rainfallMonth);
-    //cout << "Precipitation per year: \n";
-    for (size_t i = 0 ; i < m; i++)
-    {
->>>>>>> bb1991e67 (fix test)
         cout << rainfallMonth[i] << " ";
     }
     cout << endl;
