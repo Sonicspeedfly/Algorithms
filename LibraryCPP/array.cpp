@@ -14,6 +14,7 @@ Array *array_create(size_t size)
 
 void array_delete(Array *arr)
 {
+    delete[] arr->values;
     delete arr;
 }
 
